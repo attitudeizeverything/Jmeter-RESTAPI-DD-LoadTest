@@ -1,0 +1,5 @@
+test.id,test.description,http.path,http.method,parameters,assertion
+1,Get all the users details,/api/users?page=2,GET,,"""Holt"""
+2,Add a new user with job leader,/api/users,POST,"{ ""name"": ""morpheus"",""job"": ""leader""}","""leader"""
+3,Get the second  user details,/api/users/2,GET,,"""Janet"""
+4,Update the second user details with new job,/api/users/2,PUT,"{""name"": ""morpheus"",""job"": ""zion resident""}","""zion resident"""
